@@ -43,16 +43,17 @@ ul, li {
 .studio {
     color: var(--text-accent);
 }
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .navigation-wrap {
     display: flex;
     align-items: center;
 }
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid var(--line);
-    
 }
 .navigation-links:not(:last-child) {
     margin-right: 50px;
@@ -72,14 +73,15 @@ ul, li {
 .navigation-list {
     display: flex;
     list-style: none;
-    padding: 32px 0;
+}
+.navigation-link {
+    padding: 32px 0
 }
 .navigation-link:hover {
     color: var(--button-hero);
 }
 .contacts {
     display: flex;
-    padding: 32px 0;
 }
 .contacts-links {
     text-decoration: none;
@@ -88,6 +90,7 @@ ul, li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 32px 0;
 }
 .contacts-list:not(:last-child) {
     margin-right: 50px;
@@ -104,7 +107,6 @@ ul, li {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -147,7 +149,8 @@ ul, li {
     display: none;
 }
 .features {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .features-head {
     display: flex;
@@ -176,7 +179,7 @@ ul, li {
 }
 /*work*/
 .work {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 .work-container {
     display: flex;
@@ -200,12 +203,13 @@ ul, li {
 /*team*/
 .team {
     background: var(--button-portfolio);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 94px;
 }
 .team-title {
     margin-bottom: 50px;
@@ -226,12 +230,14 @@ ul, li {
     border-radius: 0px 0px 4px 4px;
 }
 .team-list {
-    padding-bottom: 94px;
     display: flex;
     list-style: none;
 }
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-cards-title {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -245,8 +251,12 @@ ul, li {
     color: var(--text-title);
 }
 /*filters-portfolio*/
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .filters-btn {
-    min-width: 73px;
+    padding: 6px 22px 6px 22px;
     height: 38px;
     background: var(--button-portfolio);
     border: none;
@@ -267,8 +277,7 @@ ul, li {
 .filters-list {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
-    padding-bottom: 34px;
+    margin-bottom: 50px;
     list-style: none;
 }
 .filters-buttons:not(:last-child) {
@@ -279,8 +288,13 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 94px;
     list-style: none;
+}
+.project-item {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding: 20px auto 4px 24px;
 }
 .project-items {
     margin-right: 30px;
@@ -298,14 +312,13 @@ ul, li {
     margin-bottom: 30px;
 }
 .project-title {
-    margin: 20px auto 4px 24px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     color: var(--text-accent);
 }
 .project-text {
-    margin-left: 24px;
     font-size: 16px;
     line-height: 30px;
     color: var(--text-title);
